@@ -1,0 +1,22 @@
+.hero-glow-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,160,255,0.25) 0%, rgba(0,160,255,0.05) 80%, transparent 100%);
+  box-shadow: 0 0 32px 16px rgba(0,160,255,0.15);
+  transition: opacity 0.2s;
+  opacity: 0;
+}
+
+.hero-glow-cursor.active {
+  opacity: 1;
+  animation: heroGlowPulse 1.5s infinite alternate;
+}
+
+@keyframes heroGlowPulse {
+  0% { box-shadow: 0 0 32px 16px rgba(0,160,255,0.15); }
+  100% { box-shadow: 0 0 48px 24px rgba(0,160,255,0.25); }
+}
