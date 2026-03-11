@@ -1,11 +1,11 @@
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from './theme';
-import Navbar from './Components/Navbar';
-import Hero from './Components/Hero';
-import About from './Components/About';
-import Projects from './Components/Projects';
-import Contact from './Components/Contact';
-import BackToTop from './Components/BackToTop';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import BackToTop from './components/BackToTop';
 
 export default function App() {
   return (
