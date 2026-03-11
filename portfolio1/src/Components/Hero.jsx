@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
 import { Box, Typography, Button, Container } from '@mui/material';
-import { useEffect, useRef } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import './HeroGlow.css';
 
 export default function Hero() {
   const cursorRef = useRef(null);
@@ -51,26 +51,35 @@ export default function Hero() {
         sx={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'background.default' }}
       >
         <Container>
-          <Typography variant="h1" gutterBottom>
-            Hi, I'm Robin Syntax.
-          </Typography>
-          <Typography variant="h3" color="text.secondary" gutterBottom>
-            Frontend Developer & UX Designer
-          </Typography>
-          <Typography variant="body1" sx={{ mb: 4 }}>
-            I craft premium web experiences with a focus on design, performance, and usability.
-          </Typography>
-          <Button
-            variant="contained"
-            color="secondary"
-            component={ScrollLink}
-            to="projects"
-            smooth
-            duration={500}
-            size="large"
-          >
-            View Projects
-          </Button>
+          <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, alignItems: 'center', mb: 4 }}>
+            <img
+              src="/assets/profile.png"
+              alt="Profilbild"
+              style={{ width: 140, height: 140, borderRadius: '24px', objectFit: 'cover', marginRight: 32, boxShadow: '0 4px 24px rgba(0,0,0,0.25)' }}
+            />
+            <Box>
+              <Typography variant="h1" gutterBottom>
+                Hi, I'm Robin Syntax.
+              </Typography>
+              <Typography variant="h3" color="text.secondary" gutterBottom>
+                Frontend Developer & UX Designer
+              </Typography>
+              <Typography variant="body1" sx={{ mb: 4 }}>
+                I craft premium web experiences with a focus on design, performance, and usability.
+              </Typography>
+              <Button
+                variant="contained"
+                color="secondary"
+                component={ScrollLink}
+                to="projects"
+                smooth
+                duration={500}
+                size="large"
+              >
+                View Projects
+              </Button>
+            </Box>
+          </Box>
         </Container>
       </Box>
     </>

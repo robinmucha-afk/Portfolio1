@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { Fab, Zoom } from '@mui/material';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { useState, useEffect } from 'react';
 
 export default function BackToTop() {
   const [visible, setVisible] = useState(false);

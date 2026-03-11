@@ -7,11 +7,13 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import BackToTop from './Components/BackToTop';
+import ParticleBackground from './Components/ParticleBackground';
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <ParticleBackground />
       <Navbar />
       <Hero />
       <About />
