@@ -1,3 +1,4 @@
+import React from 'react'
 import { Box, Typography, Avatar, Container, Stack } from '@mui/material';
 
 export default function About() {

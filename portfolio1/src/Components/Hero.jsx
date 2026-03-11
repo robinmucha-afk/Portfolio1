@@ -1,3 +1,4 @@
+import React from 'react'
 import { Box, Typography, Button, Container } from '@mui/material';
 import { useEffect, useRef } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
