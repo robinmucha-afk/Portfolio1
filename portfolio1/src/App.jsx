@@ -1,3 +1,4 @@
+import React from 'react'
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from './theme';
 import Navbar from './Components/Navbar';
